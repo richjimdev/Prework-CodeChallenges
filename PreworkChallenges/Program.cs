@@ -8,6 +8,7 @@ namespace PreworkChallenges
         {
             ChallengeOne();
             ChallengeTwo();
+            Console.WriteLine(ChallengeThree(new int[] { 1, 3, 2 }));
             Console.ReadLine();
         }
 
@@ -55,6 +56,20 @@ namespace PreworkChallenges
                     Console.WriteLine(correct);
             } else
                 Console.WriteLine(incorrect);
+        }
+
+        static string ChallengeThree(int[] arr)
+        {
+            int sum = 0;
+            int product = 1;
+            foreach (int num in arr)
+            {
+                if (num < 0) return "no";
+                sum += num;
+                product *= num;
+            }
+            if (sum == product) return "yes";
+            return "no";
         }
     }
 }
