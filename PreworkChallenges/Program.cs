@@ -6,12 +6,9 @@ namespace PreworkChallenges
     {
         static void Main(string[] args)
         {
-            //ChallengeOne();
-            //ChallengeTwo();
-            Console.WriteLine($"Testing [1, 3, 2]. Answer: {ChallengeThree(new int[] { 1, 3, 2 })}");
-            Console.WriteLine($"Testing [0, 0, 0, 0]. Answer: {ChallengeThree(new int[] { 0, 0, 0, 0 })}");
-            Console.WriteLine($"Testing [4, 5, 6]. Answer: {ChallengeThree(new int[] { 4, 5, 6 })}");
-            Console.WriteLine($"Testing [0, 2, -2]. Answer: {ChallengeThree(new int[] { 0, 2, -2 })}");
+            ChallengeOne();
+            ChallengeTwo();
+            Console.WriteLine(ChallengeThree(new int[] { 1, 3, 2 }));
             Console.ReadLine();
         }
 
