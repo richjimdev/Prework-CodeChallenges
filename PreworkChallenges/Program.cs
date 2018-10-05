@@ -7,6 +7,8 @@ namespace PreworkChallenges
         static void Main(string[] args)
         {
             ChallengeOne();
+            ChallengeTwo();
+            Console.ReadLine();
         }
 
         static void ChallengeOne()
@@ -27,13 +29,39 @@ namespace PreworkChallenges
             foreach (int num in randArray)
             {
                 if (num == choice)
-                {
                     count++;
-                }
             }
 
             Console.WriteLine($"Your score is { choice * count }");
-            Console.ReadLine();
+
+        }
+
+        static void ChallengeTwo()
+        {
+            Console.WriteLine("Input a year to check if it's a leap year:");
+            int year = Int32.Parse(Console.ReadLine());
+            string incorrect = "This is not a leap year";
+            string correct = "This is a leap year";
+            if (year % 4 == 0)
+            {
+                if (year % 100 == 0)
+                {
+                    if (year % 400 == 0)
+                    {
+                        Console.WriteLine(correct);
+                    } else
+                    {
+                        Console.WriteLine(incorrect);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine(correct);
+                }
+            } else
+            {
+                Console.WriteLine(incorrect);
+            }
         }
     }
 }
