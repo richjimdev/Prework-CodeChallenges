@@ -27,3 +27,10 @@ For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 
 Screenshot:
 
 ![](img/ch2.JPG)
+
+# Problem 3: Perfect Sequence
+Given a sequence. Return "Yes" if the sequence is considered a perfect sequence. Otherwise, return "No"
+
+Screenshot:
+
+![](img/ch3.JPG)
