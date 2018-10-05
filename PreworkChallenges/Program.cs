@@ -9,6 +9,10 @@ namespace PreworkChallenges
             ChallengeOne();
             ChallengeTwo();
             Console.WriteLine(ChallengeThree(new int[] { 1, 3, 2 }));
+
+            int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
+            int[] ch4Result = ChallengeFour(myArray);
+            Console.WriteLine(string.Join(",", ch4Result));
             Console.ReadLine();
         }
 
@@ -70,6 +74,23 @@ namespace PreworkChallenges
             }
             if (sum == product) return "yes";
             return "no";
+        }
+
+        static int[] ChallengeFour(int[,] numArr)
+        {
+            int[] result = new int[numArr.GetLength(0)];
+
+            for (int i = 0; i < numArr.GetLength(0); i++)
+            {
+                int rowSum = 0;
+                for (int j = 0; j < numArr.GetLength(1); j++)
+                {
+                    rowSum += numArr[i, j];
+                }
+                result[i] = rowSum;
+            }
+
+            return result;
         }
     }
 }
