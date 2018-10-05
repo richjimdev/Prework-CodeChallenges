@@ -47,21 +47,14 @@ namespace PreworkChallenges
                 if (year % 100 == 0)
                 {
                     if (year % 400 == 0)
-                    {
                         Console.WriteLine(correct);
-                    } else
-                    {
+                    else
                         Console.WriteLine(incorrect);
-                    }
                 }
                 else
-                {
                     Console.WriteLine(correct);
-                }
             } else
-            {
                 Console.WriteLine(incorrect);
-            }
         }
     }
 }
