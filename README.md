@@ -8,5 +8,4 @@ Create a Console application that requests 5 numbers between 1-10.
 Output the array to the console and Ask the user to select a number. 
 After the selection, output the "score" of the number chosen.
 
-Screenshot:
-
+![](img/ch1.JPG)
