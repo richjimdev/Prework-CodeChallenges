@@ -6,11 +6,13 @@ namespace PreworkChallenges
     {
         static void Main(string[] args)
         {
-            // ChallengeOne();
-            //ChallengeTwo();
-            //Console.WriteLine(ChallengeThree(new int[] { 1, 3, 2 }));
+            ChallengeOne();
+            ChallengeTwo();
+            Console.WriteLine(ChallengeThree(new int[] { 1, 3, 2 }));
+
             int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
-            Console.WriteLine(string.Join(",", ChallengeFour(myArray)));
+            int[] ch4Result = ChallengeFour(myArray);
+            Console.WriteLine(string.Join(",", ch4Result));
             Console.ReadLine();
         }
 
