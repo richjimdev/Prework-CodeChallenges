@@ -34,3 +34,11 @@ Given a sequence. Return "Yes" if the sequence is considered a perfect sequence.
 Screenshot:
 
 ![](img/ch3.JPG)
+
+# Problem 4: Sum of Rows
+Given a matrix of integers. Return the sum of each row in a single dimensional array.
+
+Screenshot:
+
+![](img/ch4.JPG)
+
